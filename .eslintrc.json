@@ -1,0 +1,41 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "settings": {
+        "ecmascript": 6,
+        "jsx": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "experimentalDecorators": true,
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "react/jsx-filename-extension": 0,
+        "import/prefer-default-export": 0,
+        "react/prefer-stateless-function": 0,
+        "react/no-unescaped-entities": 0,
+        "camelcase": "off",
+        "no-undef": "off",
+        "no-console": "off"
+    }
+}
